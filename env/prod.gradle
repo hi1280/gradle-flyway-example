@@ -1,0 +1,9 @@
+ext {
+  flyway {
+    url = "jdbc:mysql://localhost:3306/"
+    schemas = ["production"]
+    user = ""
+    password = ""
+    locations = ["filesystem:${project.projectDir}/src/main/resources/db/migration"]
+  }
+}
